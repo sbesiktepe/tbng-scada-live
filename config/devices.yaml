@@ -1,0 +1,2845 @@
+# Devices polled by the live viewer. Refresh it from the main system:
+#   scada2.tbngltd.com -> Services -> "Export devices for live viewer"  (admins)
+# Initial version generated from tbng-scada-next config/devices.yaml (32 ELGAS meters).
+devices:
+- code: AC-ELECTRIC
+  name: AC ELECTRIC
+  host: 178.242.48.110
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: AC-ELECTRIC
+    name: AC ELECTRIC
+    domain: sales
+    category: Customers
+    region: null
+    channel: 2
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 42015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 42001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 42091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 42093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 42019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 42005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: ALACALI
+  name: ALACALI
+  host: 178.242.47.228
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: ALACALI
+    name: ALACALI
+    domain: sales
+    category: Customers
+    region: null
+    channel: 2
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 42015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 42001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 42091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 42093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 42019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 42005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: ALTO-TEXTILE
+  name: ALTO TEXTILE
+  host: 178.242.74.14
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: ALTO-TEXTILE
+    name: ALTO TEXTILE
+    domain: sales
+    category: Customers
+    region: null
+    channel: 1
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 40015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 40001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 40091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 40093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 40019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 40005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: ANGORA
+  name: ANGORA
+  host: 178.242.107.15
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: ANGORA
+    name: ANGORA
+    domain: sales
+    category: Customers
+    region: null
+    channel: 1
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 40015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 40001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 40091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 40093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 40019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 40005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: BAGCILIK
+  name: BAGCILIK
+  host: 178.242.159.60
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: BAGCILIK
+    name: BAGCILIK
+    domain: sales
+    category: Customers
+    region: null
+    channel: 1
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 40015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 40001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 40091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 40093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 40019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 40005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: CAGLAYAN-BOYA
+  name: CAGLAYAN BOYA
+  host: 178.242.73.148
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: CAGLAYAN-BOYA
+    name: CAGLAYAN BOYA
+    domain: sales
+    category: Customers
+    region: null
+    channel: 1
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 40015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 40001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 40091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 40093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 40019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 40005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: CAN-ENERGY
+  name: CAN ENERGY
+  host: 5.11.164.49
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: CAN-ENERGY
+    name: CAN ENERGY
+    domain: sales
+    category: Customers
+    region: null
+    channel: 2
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 42015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 42001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 42091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 42093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 42019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 42005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: CF-MAIER
+  name: CF MAIER
+  host: 188.59.186.217
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: CF-MAIER
+    name: CF MAIER
+    domain: sales
+    category: Customers
+    region: null
+    channel: 2
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 42015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 42001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 42091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 42093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 42019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 42005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: CP-YEM
+  name: CP YEM
+  host: 5.11.176.126
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: CP-YEM
+    name: CP YEM
+    domain: sales
+    category: Customers
+    region: null
+    channel: 1
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 40015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 40001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 40091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 40093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 40019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 40005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: DATA-BOYA
+  name: DATA BOYA
+  host: 178.242.70.156
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: DATA-BOYA
+    name: DATA BOYA
+    domain: sales
+    category: Customers
+    region: null
+    channel: 2
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 42015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 42001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 42091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 42093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 42019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 42005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: DERYA-TUGLA
+  name: DERYA TUGLA
+  host: 5.26.91.77
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: DERYA-TUGLA
+    name: DERYA TUGLA
+    domain: sales
+    category: Customers
+    region: null
+    channel: 1
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 40015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 40001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 40091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 40093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 40019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 40005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: DOGUS-TEXTILE
+  name: DOGUS TEXTILE
+  host: 5.11.174.176
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: DOGUS-TEXTILE
+    name: DOGUS TEXTILE
+    domain: sales
+    category: Customers
+    region: null
+    channel: 1
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 40015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 40001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 40091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 40093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 40019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 40005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: ECESOY
+  name: ECESOY
+  host: 178.242.73.176
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: ECESOY
+    name: ECESOY
+    domain: sales
+    category: Customers
+    region: null
+    channel: 2
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 42015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 42001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 42091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 42093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 42019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 42005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: EKSUN
+  name: EKSUN
+  host: 5.11.172.191
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: EKSUN
+    name: EKSUN
+    domain: sales
+    category: Customers
+    region: null
+    channel: 1
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 40015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 40001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 40091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 40093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 40019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 40005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: EMBOSSAN
+  name: EMBOSSAN
+  host: 188.59.137.101
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: EMBOSSAN
+    name: EMBOSSAN
+    domain: sales
+    category: Customers
+    region: null
+    channel: 2
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 42015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 42001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 42091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 42093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 42019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 42005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: ERCA
+  name: ERCA
+  host: 178.242.159.58
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: ERCA
+    name: ERCA
+    domain: sales
+    category: Customers
+    region: null
+    channel: 1
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 40015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 40001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 40091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 40019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 40005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+  - code: ERCA-LP
+    name: ERCA
+    domain: sales
+    category: Pressure Readings
+    region: null
+    channel: null
+    fields:
+    - key: linePressure
+      label: LINE PRESSURE
+      unit: bar
+      register: 40011
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+- code: EREN-TEXTILE
+  name: EREN TEXTILE
+  host: 178.242.81.135
+  port: 8090
+  slave_id: 21
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: EREN-TEXTILE
+    name: EREN TEXTILE
+    domain: sales
+    category: Customers
+    region: null
+    channel: 2
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 42015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 42001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 42091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 42093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 42019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 42005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: GAZDAS-TEKIRDAG
+  name: GAZDAS TEKIRDAG
+  host: 178.242.73.248
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: GAZDAS-TEKIRDAG
+    name: GAZDAS TEKIRDAG
+    domain: sales
+    category: Customers
+    region: null
+    channel: 2
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 42015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 42001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 42091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 42093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 42019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 42005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: HALIS-TEXTILE
+  name: HALIS TEXTILE
+  host: 178.242.49.159
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: HALIS-TEXTILE
+    name: HALIS TEXTILE
+    domain: sales
+    category: Customers
+    region: null
+    channel: 1
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 40015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 40001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 40091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 40093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 40019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 40005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: HAMLE-TEXTILE
+  name: HAMLE TEXTILE
+  host: 178.242.81.131
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: HAMLE-TEXTILE
+    name: HAMLE TEXTILE
+    domain: sales
+    category: Customers
+    region: null
+    channel: 2
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 42015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 42001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 42091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 42093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 42019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 42005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: HUZUR-EVI
+  name: HUZUR EVI
+  host: 188.59.201.212
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: HUZUR-EVI
+    name: HUZUR EVI
+    domain: sales
+    category: Customers
+    region: null
+    channel: 1
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 40015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 40001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 40091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 40093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 40019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 40005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: KARSAL
+  name: KARSAL
+  host: 178.242.46.96
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: KARSAL
+    name: KARSAL
+    domain: sales
+    category: Customers
+    region: null
+    channel: 2
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 42015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 42001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 42091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 42093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 42019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 42005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: KOLEKSIYON
+  name: KOLEKSIYON
+  host: 178.242.135.135
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: KOLEKSIYON
+    name: KOLEKSIYON
+    domain: sales
+    category: Customers
+    region: null
+    channel: 1
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 40015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 40001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 40091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 40093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 40019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 40005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: LILA
+  name: LILA
+  host: 178.242.135.50
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: LILA-PAPER
+    name: LILA PAPER
+    domain: sales
+    category: Customers
+    region: null
+    channel: 1
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 40015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 40001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 40091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 40093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 40019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 40005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+  - code: LILA-DYE
+    name: LILA DYE
+    domain: sales
+    category: Customers
+    region: null
+    channel: 2
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 42015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 42001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 42091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 42093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 42019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 42005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: MAVIS-IPLIK
+  name: MAVIS IPLIK
+  host: 178.242.111.230
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: MAVIS-IPLIK
+    name: MAVIS IPLIK
+    domain: sales
+    category: Customers
+    region: null
+    channel: 1
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 40015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 40001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 40091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 40093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 40019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 40005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: ONBOY
+  name: ONBOY
+  host: 178.242.46.159
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: ONBOY-1
+    name: ONBOY-1
+    domain: sales
+    category: Customers
+    region: null
+    channel: 1
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 40015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 40001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 40091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 40093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 40019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 40005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+  - code: ONBOY-2
+    name: ONBOY-2
+    domain: sales
+    category: Customers
+    region: null
+    channel: 2
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 42015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 42001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 42091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 42093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 42019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 42005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: SALVIN
+  name: SALVIN
+  host: 188.59.87.119
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: SALVIN
+    name: SALVIN
+    domain: sales
+    category: Customers
+    region: null
+    channel: 2
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 42015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 42001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 42091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 42093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 42019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 42005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: SYSTEM-ALUMINUM
+  name: SYSTEM ALUMINUM
+  host: 178.242.159.61
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: SYSTEM-ALUMINUM
+    name: SYSTEM ALUMINUM
+    domain: sales
+    category: Customers
+    region: null
+    channel: 2
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 42015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 42001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 42091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 42093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 42019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 42005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: SLNBOYA
+  name: SLNBOYA
+  host: 178.242.80.20
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: SLNBOYA
+    name: SLNBOYA
+    domain: sales
+    category: Customers
+    region: null
+    channel: 1
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 40015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 40001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 40091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 40093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 40019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 40005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: TEKIRDAG-UN
+  name: TEKIRDAG UN
+  host: 5.11.171.140
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: TEKIRDAG-UN
+    name: TEKIRDAG UN
+    domain: sales
+    category: Customers
+    region: null
+    channel: 1
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 40015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 40001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 40091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 40093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 40019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 40005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: TURBO-TEXTILE
+  name: TURBO TEXTILE
+  host: 188.59.158.211
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: TURBO-TEXTILE
+    name: TURBO TEXTILE
+    domain: sales
+    category: Customers
+    region: null
+    channel: 1
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 40015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 40001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 40091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 40093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 40019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 40005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true
+- code: ULUCAM
+  name: ULUCAM
+  host: 178.242.159.59
+  port: 8090
+  slave_id: 1
+  transport: rtu_over_tcp
+  max_block_gap: null
+  poll_seconds: 10
+  timeout_seconds: 5.0
+  passive_seconds: 60
+  cards:
+  - code: ULUCAM
+    name: ULUCAM
+    domain: sales
+    category: Customers
+    region: null
+    channel: 1
+    fields:
+    - key: flow
+      label: FLOW RATE
+      unit: m3/h
+      register: 40015
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: flow
+      show_on_card: true
+    - key: pressure
+      label: PRESSURE
+      unit: bar
+      register: 40001
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 3
+      summary_role: null
+      show_on_card: true
+    - key: today
+      label: TODAY VOL.
+      unit: m3
+      register: 40091
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: today
+      show_on_card: true
+    - key: monthlyCum
+      label: MONTHLY CUM.
+      unit: m3
+      register: 40093
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: monthly_cum
+      show_on_card: true
+    - key: correctionVol
+      label: COR. VOLUME
+      unit: m3
+      register: 40019
+      register_notation: modicon
+      data_type: LNG
+      word_order: ABCD
+      scale: 1.0
+      decimals: 0
+      summary_role: null
+      show_on_card: true
+    - key: correctionFac
+      label: COR. FACTOR
+      unit: '%'
+      register: 40005
+      register_notation: modicon
+      data_type: FLT
+      word_order: ABCD
+      scale: 1.0
+      decimals: 4
+      summary_role: null
+      show_on_card: true

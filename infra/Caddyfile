@@ -1,0 +1,20 @@
+# Public entry of the emergency live viewer: automatic Let's Encrypt TLS and one shared,
+# read-only account (the viewer has no write function at all).
+{$SITE_ADDRESS} {
+	encode zstd gzip
+
+	basic_auth {
+		{$LIVE_USER} {$LIVE_PASSWORD_HASH}
+	}
+
+	reverse_proxy live:8000
+
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		Referrer-Policy "no-referrer"
+		Content-Security-Policy "default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; frame-ancestors 'none'"
+		-Server
+	}
+}

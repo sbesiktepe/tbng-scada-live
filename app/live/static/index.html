@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TBNG SCADA Live</title>
+<link rel="icon" href="/static/brand/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/styles.css?v=1">
+</head>
+<body>
+<header class="top">
+  <span class="logo"><img src="/static/brand/tbng-logo.png" alt="TBNG" width="76" height="37"></span>
+  <span class="product">SCADA <b>LIVE</b></span>
+  <span class="badge" title="The main system (scada2.tbngltd.com) is not reachable; this emergency viewer reads the devices directly">Emergency view · live values only</span>
+  <span class="clock" id="clock"></span>
+</header>
+<main>
+  <div class="bar">
+    <div class="chips" id="domainChips"></div>
+    <div class="chips" id="catChips"></div>
+    <input id="search" type="search" placeholder="Search" autocomplete="off">
+  </div>
+  <p class="note" id="note"></p>
+  <div class="grid" id="grid"></div>
+</main>
+<script src="/static/app.js?v=1"></script>
+</body>
+</html>

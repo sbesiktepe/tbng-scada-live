@@ -1,0 +1,44 @@
+# TBNG SCADA Live - emergency viewer for a cloud server.
+#
+#   cp .env.example .env    (site address, shared user, password hash)
+#   docker compose up -d --build
+#
+# Reads every device in config/devices.yaml DIRECTLY over Modbus (read-only) and
+# shows only the latest values. No database, no history. Run it only while the
+# main system (scada2.tbngltd.com) is down: every poll uses the modems' mobile data.
+name: tbng-scada-live
+
+services:
+  live:
+    build: ./app
+    restart: unless-stopped
+    read_only: true
+    security_opt: ["no-new-privileges:true"]
+    cap_drop: [ALL]
+    tmpfs: ["/tmp:size=16m"]
+    environment:
+      DEVICES_FILE: /config/devices.yaml
+      MIN_POLL_SECONDS: ${MIN_POLL_SECONDS:-30}
+      TZ: Europe/Istanbul
+    volumes:
+      - ./config:/config:ro
+
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    depends_on: [live]
+    environment:
+      SITE_ADDRESS: ${SITE_ADDRESS:?set SITE_ADDRESS in .env}
+      LIVE_USER: ${LIVE_USER:?set LIVE_USER in .env}
+      LIVE_PASSWORD_HASH: ${LIVE_PASSWORD_HASH:?set LIVE_PASSWORD_HASH in .env}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./infra/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+
+volumes:
+  caddy-data:
+  caddy-config:
